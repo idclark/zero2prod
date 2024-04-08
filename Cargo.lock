@@ -1888,6 +1888,7 @@ dependencies = [
  "actix-web",
  "clippy",
  "reqwest",
+ "serde",
  "tokio",
 ]
 
