@@ -2,3 +2,4 @@
 /.DS_Store
 *.sh~
 /migrations/20240408144957_create_subscriptions_table.sql~
+*.rs~
