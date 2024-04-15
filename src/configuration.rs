@@ -31,4 +31,12 @@ impl DatabaseSettings {
             self.username, self.password, self.host, self.port, self.database_name
         )
     }
+
+    // helper so we can use random db names in tests
+    pub fn connection_string_without_db(&self) -> String {
+        format!(
+            "postgress://{}:{}@{}:{}",
+            self.username, self.password, self.host, self.port
+        )
+    }
 }
